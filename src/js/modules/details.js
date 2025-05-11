@@ -15,6 +15,7 @@ export default function details() {
   });
   let detailsSwiper = new Swiper(".details-swiper", {
     spaceBetween: 8,
+    autoHeight: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
