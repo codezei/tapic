@@ -1,0 +1,36 @@
+header.header 
+    .container 
+        .header__top 
+            .row.justify-content-between.align-items-center 
+                .col-auto 
+                    | Polska, Poznań
+                .col-auto 
+                    a(href="tel:+48789662179").link 
+                        svg.icon(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                            path(d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z")
+                            path(d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2")
+                        | +48789662179 
+        .header__inner.custom-bg-dark
+            .header__logo 
+                a.logo(href="index.html#promo") 
+                    img(src="img/logo-light.png", alt="Tapik tapicer samochodowy", width="70", height="31")
+            .header__menu#main-menu 
+                nav.menu 
+                    a.menu__item(href="index.html#about") O nas
+                    a.menu__item(href="index.html#services") Usługi
+                    //- a.menu__item(href="index.html#price") Ceny
+                    a.menu__item(href="#reviews") Opinie
+                    a.menu__item(href="index.html#works") Prace
+                    a.menu__item(href="#contacts") Kontakt
+                .header__menu-socials.text-center
+                    include socials
+                .header__menu-btn.text-center
+                    a.btn.btn-primary.btn-large(href="tel:+48791131986") Zadzwoń
+            .header__button
+                a.btn.btn-secondary.btn-small(href="tel:+48791131986") Zadzwoń
+            .header__burger
+                button.js-burger.btn.btn-transparent(type="button", arial-label="Toggle navigation", aria-expanded="false", aria-controls="main-menu")
+                    span.cross 
+                        span 
+                        span
+                        span

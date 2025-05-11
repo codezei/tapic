@@ -1,0 +1,64 @@
+section.services#services.block
+        .container
+            .services__navigation
+                .row.align-items-center.justify-content-between.services__row
+                    .col-auto 
+                        
+                            h2.services__title.text-uppercase Nasze usługi
+                            p.services__subtitle Oferuję tapicerkę samochodową w zakresie:
+                    .col-auto 
+                        .swiper-navigation
+                            .services-button-prev.btn.btn-secondary.btn-small
+                                svg.bi.bi-chevron-left(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                    path(fill-rule="evenodd", d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+                            .services-button-next.btn.btn-secondary.btn-small
+                                svg.bi.bi-chevron-right(xmlns="http://www.w3.org/2000/svg", width="16", height="16", fill="currentColor", viewBox="0 0 16 16")
+                                    path(fill-rule="evenodd", d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+            .swiper.services-swiper 
+                .swiper-wrapper
+                    .swiper-slide
+                        .service.custom-bg
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-img-2.webp", type="image/webp")
+                                    img(src="img/service-img-2.jpg", alt="Tapicerka foteli", loading="lazy")
+                            .service__body
+                                h6.service__title.text-third Tapicerka foteli
+                                .service__description Kompleksowe tapicerowanie foteli – odnowienie wyglądu, poprawa wygody i zwiększenie wartości auta.
+                            .service__footer 
+                                a.service__more(href="seat.html") Więcej szczegółów
+                    .swiper-slide
+                        .service.custom-bg 
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-img-1.webp", type="image/webp")
+                                    img(src="img/service-img-1.jpg", alt="Tapicerka kierownicy, gałki zmiany biegów i podłokietnika")
+                            .service__body
+                                h6.service__title.text-third Tapicerka detali wnętrza
+                                .service__description Obszycie kierownicy, gałki zmiany biegów, podłokietnika i innych elementów wnętrza – skóra naturalna lub alcantara. Nowy wygląd, lepszy chwyt i trwałość.
+                            .service__footer 
+                                a.service__more(href="wheel.html") Więcej szczegółów
+                    .swiper-slide
+                        .service.custom-bg
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-img-3.webp", type="image/webp")
+                                    img(src="img/service-img-3.jpg", alt="Tapicerka podsufitki", loading="lazy")
+                            .service__body
+                                h6.service__title.text-third Tapicerka podsufitki
+                                .service__description Profesjonalna wymiana podsufitki – bez opadania materiału, z idealnym dopasowaniem do wnętrza.
+                            .service__footer 
+                                a.service__more(href="ceiling.html") Więcej szczegółów
+                    .swiper-slide
+                        .service.custom-bg
+                            .service__header
+                                picture.service__img
+                                    source(srcset="img/service-img-4.webp", type="image/webp")
+                                    img(src="img/service-img-4.jpg", alt="Tapicerka drzwi (boczków)", loading="lazy")
+                            .service__body
+                                h6.service__title.text-third Tapicerka drzwi (boczków)
+                                .service__description Renowacja boczków drzwiowych – estetyczne wykończenie i lepsze wygłuszenie wnętrza.
+                            .service__footer 
+                                a.service__more(href="door.html") Więcej szczegółów
+            .services__btn
+                a.btn.btn-primary.btn-large(href="#cta") Umów się

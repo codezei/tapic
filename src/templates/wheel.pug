@@ -1,0 +1,27 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "Tapicerka Kierownicy i Detali Poznań | Tapik – Obszywanie Elementów Wnętrza"
+  - const pageDescription = "Obszywanie kierownicy, gałki biegów, podłokietnika i innych detali wnętrza auta. Tapik – tapicer z Poznania. Precyzja, jakość i dopasowanie materiału do wnętrza."
+  - const pageKeywords = "tapicerka kierownicy, obszywanie podłokietnika, gałka zmiany biegów, tapicerka detali, tapicer wnętrza auta Poznań, Tapik tapicer samochodowy"
+  - const pageUrl = "https://tapik.pl/door.html"
+  - const pageImage = "https://tapik.pl/img/service-door.jpg"
+  - const twitterImage = "https://tapik.pl/img/service-door.jpg"
+  - const themeColor = "#000000"
+
+append head
+
+append content
+  include components/header
+  main
+    include components/wheel/details
+    include components/cta
+    include components/reviews
+    include components/contacts
+    include components/popup
+  include components/footer
+
+append scripts

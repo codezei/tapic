@@ -1,0 +1,27 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "Tapicerka Fotelów Samochodowych Poznań | Tapik – Obszywanie Siedzeń"
+  - const pageDescription = "Pełna lub częściowa tapicerka foteli w Poznaniu. Tapik – profesjonalne obszywanie siedzeń materiałem, alcantarą lub skórą. Dopasowanie do wnętrza i trwałe wykonanie."
+  - const pageKeywords = "tapicerka foteli, tapicerowanie siedzeń, obszywanie foteli Poznań, tapicer samochodowy Tapik, wymiana tapicerki siedzeń, tapicer Poznań"
+  - const pageUrl = "https://tapik.pl/seat.html"
+  - const pageImage = "https://tapik.pl/img/service-seat.jpg"
+  - const twitterImage = "https://tapik.pl/img/service-seat.jpg"
+  - const themeColor = "#000000"
+
+append head
+
+append content
+  include components/header
+  main
+    include components/seat/details
+    include components/cta
+    include components/reviews
+    include components/contacts
+    include components/popup
+  include components/footer
+
+append scripts

@@ -1,0 +1,27 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "Tapicerka Boczków Drzwi Poznań | Tapik – Obszywanie Paneli Wnętrza"
+  - const pageDescription = "Obszywanie boczków drzwi w Tapik Poznań – tapicerka dopasowana do wnętrza, estetyczne i trwałe wykończenie. Tkanina, skóra, alcantara – pełen profesjonalizm."
+  - const pageKeywords = "tapicerka boczków drzwi, obszywanie boczków, tapicerka drzwi samochodowych, tapicer samochodowy Poznań, tapicer wnętrza auta, Tapik Poznań"
+  - const pageUrl = "https://tapik.pl/door.html"
+  - const pageImage = "https://tapik.pl/img/service-door.jpg"
+  - const twitterImage = "https://tapik.pl/img/service-door.jpg"
+  - const themeColor = "#000000"
+
+append head
+
+append content
+  include components/header
+  main
+    include components/door/details
+    include components/cta
+    include components/reviews
+    include components/contacts
+    include components/popup
+  include components/footer
+
+append scripts

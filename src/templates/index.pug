@@ -1,0 +1,35 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "DetailingPro Poznań - Auto Detailing | Mycie, Polerowanie, Czyszczenie Wnętrza - Cennik";
+  - const themeColor = "#000000";
+  - const pageDescription = "Tapik - doświadczony tapicer samochodowy z Poznania. Obszywanie kierownicy, foteli, podsufitki i boczków drzwi. Wysoka jakość materiałów: skóra, alcantara, welur. Fachowe wykonanie i indywidualne podejście.";
+  - const pageKeywords = "Tapik, tapicer samochodowy, tapicer samochodowy Poznań, obszywanie kierownicy, tapicerka samochodowa, tapicerka foteli, tapicerka podsufitki, renowacja wnętrza auta, tapicerka drzwi, skórzana tapicerka samochodowa, alcantara samochodowa, wymiana tapicerki";
+  - const pageUrl = "https://tapik.pl";
+  - const pageImage = "https://tapik.pl/img/logo.png";
+  - const twitterImage = "https://tapik.pl/img/logo-light.png";
+
+append head
+
+append content
+  include components/header
+  main
+    include components/promo
+    include components/services
+    include components/about
+    include components/why
+    include components/how
+    //- include components/banner
+    //- include components/price
+    include components/works
+    include components/cta
+    include components/reviews
+    include components/faq
+    include components/contacts
+    include components/popup
+  include components/footer
+
+append scripts

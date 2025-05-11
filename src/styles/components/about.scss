@@ -1,0 +1,46 @@
+.about {
+    background: #fff;
+    &__title {
+        position: relative;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        // padding: 1rem;
+        // border-radius: 1rem;
+        // background: #fff;
+        // box-shadow: 8px 5px 16px rgba($color: $first, $alpha: 0.2);
+    }
+    &__info {
+        line-height: 1.5;
+        text-align: center;
+
+    }
+    &__btn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    &__image {
+        
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        &__inner {
+            flex-direction: row;
+        }
+        &__image {
+            max-width: 300px;
+        }
+    }
+
+}
