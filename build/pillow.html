@@ -15,15 +15,12 @@
   <meta property="og:title" content="Poduszki pod Zagłówki na Zamówienie | Tapik – Komfort i Styl">
   <meta property="og:description" content="Szyjemy eleganckie i wygodne poduszki pod zagłówki na wymiar. Idealne do wnętrz samochodowych – komfort, dopasowanie i jakość od Tapik Poznań.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tapik.pl/pillow.html">
-  <meta property="og:image" content="https://tapik.pl/img/service-pillow.jpg">
+  <meta property="og:url" content="https://tapik.com.pl/pillow.html">
+  <meta property="og:image" content="https://tapik.com.pl/img/service-pillow.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Poduszki pod Zagłówki na Zamówienie | Tapik – Komfort i Styl">
   <meta name="twitter:description" content="Szyjemy eleganckie i wygodne poduszki pod zagłówki na wymiar. Idealne do wnętrz samochodowych – komfort, dopasowanie i jakość od Tapik Poznań.">
-  <meta name="twitter:image" content="https://tapik.pl/img/service-pillow.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta name="twitter:image" content="https://tapik.com.pl/img/service-pillow.jpg">
 </head>
 
 <body>
@@ -39,7 +36,10 @@
         </div>
       </div>
       <div class="header__inner custom-bg-dark">
-        <div class="header__logo"> <a class="logo" href="index.html#promo"> <img src="img/logo-light.png" alt="Tapik tapicer samochodowy" width="70" height="31"></a></div>
+        <div class="header__logo"> <a class="logo" href="index.html#promo">
+            <picture>
+              <source srcset="img/logo-light.webp" type="image/webp"><img src="img/logo-light.png" alt="Tapik tapicer samochodowy" width="87" height="31"></picture>
+          </a></div>
         <div class="header__menu" id="main-menu">
           <nav class="menu"> <a class="menu__item" href="index.html#about">O nas</a><a class="menu__item" href="index.html#services">Usługi</a><a class="menu__item" href="#reviews">Opinie</a><a class="menu__item" href="index.html#works">Prace</a><a class="menu__item" href="#contacts">Kontakt</a></nav>
           <div class="header__menu-socials text-center">
@@ -56,7 +56,7 @@
         <div class="header__button"><a class="btn btn-secondary btn-small" href="tel:+48791131986"> <svg class="icon shake" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"></path>
             </svg>Zadzwoń</a></div>
-        <div class="header__burger"><button class="js-burger btn btn-transparent" type="button" arial-label="Toggle navigation" aria-expanded="false" aria-controls="main-menu"><span class="cross"> <span> </span><span></span><span></span></span></button></div>
+        <div class="header__burger"><button class="js-burger btn btn-transparent" type="button" aria-expanded="false" aria-controls="main-menu"><span class="cross"> <span> </span><span></span><span></span></span></button></div>
       </div>
     </div>
   </header>
@@ -163,8 +163,8 @@
               <h3 class="h6 text-center cta__subtitle">Wypełnij formularz, a skontaktujemy się z Tobą tak szybko, jak to możliwe.</h3>
               <form class="cta__form" id="cta-form" method="POST">
                 <div class="row cta__row">
-                  <div class="col-6"> <input class="input cta__input" type="text" placeholder="Imię" name="name"></div>
-                  <div class="col-6"> <input class="input cta__input" type="tel" placeholder="Telefon" name="phone"></div>
+                  <div class="col-6"> <input class="input cta__input" type="text" placeholder="Imię" name="name" required></div>
+                  <div class="col-6"> <input class="input cta__input" type="tel" placeholder="Telefon" name="phone" required></div>
                   <div class="col-12"> <input class="input cta__input" type="text" placeholder="Marka samochodu" name="car"></div>
                   <div class="col-12"> <button class="btn btn-primary btn-normal cta__btn" type="submit">Zarejestrować się </button></div>
                 </div>
