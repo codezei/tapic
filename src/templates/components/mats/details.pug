@@ -1,0 +1,39 @@
+section.block.details.custom-bg-light  
+  .container 
+    .row.justify-content-around.align-items-center 
+      .col-12.col-lg-6 
+        h1.details__title Dywaniki Samochodowe EVA i Welurowe – Trwałość i Styl
+        p.details__description.custom-bg-light Wykonujemy na zamówienie dywaniki samochodowe z wysokiej jakości materiału EVA oraz eleganckiego weluru. Zapewniają ochronę wnętrza auta, są łatwe w czyszczeniu i dodają estetyki kabinie. Każdy komplet wykonujemy ręcznie, dopasowując kształt do konkretnego modelu pojazdu.
+        ul 
+          li 
+            b.text-bold Idealne dopasowanie: 
+            | Tworzymy dywaniki na podstawie realnych wymiarów Twojego auta.
+          li 
+            b.text-bold Materiały premium: 
+            | EVA – lekki, wodoodporny i odporny na ścieranie; welur – miękki i estetyczny.
+          li 
+            b.text-bold Łatwe w utrzymaniu czystości: 
+            | Wystarczy przetrzeć wilgotną szmatką lub odkurzyć.
+          li 
+            b.text-bold Antypoślizgowa struktura: 
+            | Bezpieczeństwo i stabilność nawet podczas jazdy.
+          li 
+            b.text-bold Personalizacja: 
+            | Różne kolory, wykończenia i hafty do wyboru.
+      .col-12.col-lg-6.col-xl-5.col-xxl-4 
+        .swiper.details-swiper
+          .swiper-wrapper 
+            each num in [1,2,3,4,5]
+              .swiper-slide 
+                picture.work
+                  source(srcset=`img/mats/mats-img-${num}-mob.webp`, type="image/webp")
+                  img.work__img(src=`img/mats/mats-img-${num}-mob.jpg`, alt=`Dywaniki samochodowe – zdjęcie ${num}`)
+          .swiper-button-next
+          .swiper-button-prev
+        .swiper.details-swiper-thumb 
+          .swiper-wrapper 
+            each num in [1,2,3,4,5]
+              .swiper-slide 
+                picture.work
+                  source(srcset=`img/mats/mats-img-${num}-mob.webp`, type="image/webp")
+                  img.work__img(src=`img/mats/mats-img-${num}-mob.jpg`, alt="")

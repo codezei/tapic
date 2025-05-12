@@ -2,8 +2,8 @@ export default function details() {
   let detailsSwiperThumb = new Swiper(".details-swiper-thumb", {
     spaceBetween: 8,
     slidesPerView: 4,
-    // freeMode: true,
-    // watchSlidesProgress: true,
+    freeMode: true,
+    watchSlidesProgress: true,
         on: {
       slideChange: function (slider) {
           if (detailsSwiper) {

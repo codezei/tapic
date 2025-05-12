@@ -1,10 +1,9 @@
 .promo {
     background-color: #fff;
-    background-image:  url(../img/promo-bg-2.jpg);
-    // linear-gradient(to right, rgba($color: #fff, $alpha: 1) 0%, rgba($color: #fff, $alpha: 1) 50%, rgba($color: #fff, $alpha: 0) 60%),
+    background-image:  url(../img/promo-bg-mob.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right 33% center;
+    background-position: center;
     &__title {
         text-transform: uppercase;
     }
@@ -32,6 +31,7 @@
     }
 
     @media screen and (min-width: 576px) {
+        background-image:  url(../img/promo-bg-tablet.webp);
         &__info {
             text-align: left;
         }
@@ -52,6 +52,9 @@
         &__btn {
             margin-bottom: 0;
         }
+    }
+    @media screen and (min-width: 1400px) {
+        background-image:  url(../img/promo-bg.webp);
     }
 
     

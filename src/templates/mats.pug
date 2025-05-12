@@ -1,0 +1,27 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "Dywaniki Samochodowe EVA i Welur | Tapik – Na Wymiar z Poznania"
+  - const pageDescription = "Szyjemy na zamówienie dywaniki samochodowe z materiału EVA i weluru – trwałe, estetyczne i idealnie dopasowane do modelu auta. Tapik – rzemiosło i jakość z Poznania."
+  - const pageKeywords = "dywaniki samochodowe, dywaniki EVA, dywaniki welurowe, akcesoria samochodowe Poznań, tapicer samochodowy Tapik, dywaniki na wymiar, mata EVA do auta"
+  - const pageUrl = "https://tapik.pl/mats.html"
+  - const pageImage = "https://tapik.pl/img/service-mats.jpg"
+  - const twitterImage = "https://tapik.pl/img/service-mats.jpg"
+  - const themeColor = "#ffffff"
+
+append head
+
+append content
+  include components/header
+  main
+    include components/mats/details
+    include components/cta
+    include components/reviews
+    include components/contacts
+    include components/popup
+  include components/footer
+
+append scripts

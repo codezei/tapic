@@ -202,8 +202,8 @@
 	  var detailsSwiperThumb = new Swiper(".details-swiper-thumb", {
 	    spaceBetween: 8,
 	    slidesPerView: 4,
-	    // freeMode: true,
-	    // watchSlidesProgress: true,
+	    freeMode: true,
+	    watchSlidesProgress: true,
 	    on: {
 	      slideChange: function slideChange(slider) {
 	        if (detailsSwiper) {

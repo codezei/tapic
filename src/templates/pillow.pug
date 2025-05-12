@@ -1,0 +1,27 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "Poduszki pod Zagłówki na Zamówienie | Tapik – Komfort i Styl"
+  - const pageDescription = "Szyjemy eleganckie i wygodne poduszki pod zagłówki na wymiar. Idealne do wnętrz samochodowych – komfort, dopasowanie i jakość od Tapik Poznań."
+  - const pageKeywords = "poduszki pod zagłówki, szycie poduszek samochodowych, komfortowe akcesoria do auta, tapicer samochodowy Tapik, personalizowane poduszki, Poznań akcesoria samochodowe"
+  - const pageUrl = "https://tapik.pl/pillow.html"
+  - const pageImage = "https://tapik.pl/img/service-pillow.jpg"
+  - const twitterImage = "https://tapik.pl/img/service-pillow.jpg"
+  - const themeColor = "#ffffff"
+
+append head
+
+append content
+  include components/header
+  main
+    include components/pillow/details
+    include components/cta
+    include components/reviews
+    include components/contacts
+    include components/popup
+  include components/footer
+
+append scripts

@@ -11,6 +11,7 @@
         // padding: 0.75rem;
         // background: rgba($color: #000000, $alpha: 0.8);
         // backdrop-filter: blur(10px);
+        
 
         display: flex;
         align-items: center;
@@ -29,6 +30,8 @@
         padding: 0.25rem 1rem;
         // background: rgba($color: #000000, $alpha: 0.8);
         backdrop-filter: blur(10px);
+        background-color: rgba($color: $fourth, $alpha: 0.6);
+        margin-bottom: -5px;
 
     }
 
@@ -141,7 +144,7 @@
     font-weight: 500;
     font-size: 0.75rem;
     text-align: center;
-    display: inline-block;
+    display: block;
     img {
         // width: 50px;
         height: 50px;
@@ -239,4 +242,34 @@
     &:hover:before {   
         transform: scaleY(1);
     }
+}
+
+
+.shake {
+  animation: shake 1s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  45% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
 }

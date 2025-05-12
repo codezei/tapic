@@ -1,0 +1,40 @@
+section.block.details.custom-bg-light  
+  .container 
+    .row.justify-content-around.align-items-center 
+      .col-12.col-lg-6 
+        h1.details__title Poduszki pod Zagłówki – Komfort i Detal Premium
+        p.details__description.custom-bg-light Wykonujemy na zamówienie stylowe poduszki pod zagłówki, które zwiększają komfort podróży i podkreślają indywidualny charakter wnętrza auta. Stosujemy miękkie, przyjemne w dotyku materiały oraz dbamy o staranne wykończenie każdego elementu. Projektujemy według Twoich potrzeb – rozmiar, kolor, wzór pikowania.
+        ul 
+          li 
+            b.text-bold Większy komfort jazdy: 
+            | Miękkie wsparcie szyi i głowy podczas dłuższych tras.
+          li 
+            b.text-bold Indywidualny projekt: 
+            | Dobieramy rozmiar, materiał i kolor według Twoich oczekiwań.
+          li 
+            b.text-bold Trwałe tkaniny: 
+            | Używamy materiałów tapicerskich wysokiej jakości – skóry, alcantary, weluru.
+          li 
+            b.text-bold Estetyczne wykończenie: 
+            | Pikowanie, ozdobne przeszycia, dopasowanie do wnętrza auta.
+          li 
+            b.text-bold Produkcja ręczna w Poznaniu: 
+            | Każdy egzemplarz szyty jest indywidualnie w naszej pracowni.
+      .col-12.col-lg-6.col-xl-5.col-xxl-4 
+        .swiper.details-swiper
+          .swiper-wrapper 
+            each num in [1,2,3,4,5,6,7,8]
+              .swiper-slide 
+                picture.work
+                  source(srcset=`img/pillow/pillow-img-${num}-mob.webp`, type="image/webp")
+                  img.work__img(src=`img/pillow/pillow-img-${num}-mob.jpg`, alt=`Poduszka pod zagłówek – zdjęcie ${num}`)
+          .swiper-button-next
+          .swiper-button-prev
+        .swiper.details-swiper-thumb 
+          .swiper-wrapper 
+            each num in [1,2,3,4,5,6,7,8]
+              .swiper-slide 
+                picture.work
+                  source(srcset=`img/pillow/pillow-img-${num}-mob.webp`, type="image/webp")
+                  img.work__img(src=`img/pillow/pillow-img-${num}-mob.jpg`, alt="")
+

@@ -4,6 +4,10 @@ section.reviews#reviews.block
                 .row.align-items-center.justify-content-between.reviews__row 
                     .col-auto
                         h2.reviews__title.text-uppercase Opinie
+                        .reviews__google 
+                            .reviews__google-value 5.0 
+                            .reviews__google-stars.rating(style="--star-rating: 5;")
+                        img(src="img/google-rating.svg", alt="")
                     .col-auto 
                         .swiper-navigation
                             .reviews-button-prev.btn.btn-secondary.btn-small
@@ -17,80 +21,77 @@ section.reviews#reviews.block
                     .swiper-slide
                         .review.custom-bg-light
                             .review__header
-                                img.review__ava(src="img/m1.jpg", alt="")
+                                .review__ava(data-letter="Д", style="--bg-color: lightblue")
                                 div
-                                    h6.review__name Jakub
+                                    h6.review__name Дмитрий Власюк
                                     .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Wcześniej zamawiałem tylko czyszczenie, ale teraz zdecydowałem się na wymianę tapicerki foteli i podsufitki. Efekt przeszedł moje oczekiwania – samochód wygląda jak z salonu. Szycie precyzyjne, wszystko dopasowane, materiał porządny. Fachowa robota!
-
+                            p.review__text Ребята классно перетянули потолочек стойки – быстро, аккуратно и качественно. Результат радует, спасибо!
                     .swiper-slide
                         .review.custom-bg-light
                             .review__header
-                                img.review__ava(src="img/m2.jpg", alt="")
-                                div
-                                    h6.review__name Adrian
-                                    .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Tapicerka w moim aucie była mocno zużyta – plamy, przetarcia, nawet dziury. Po regeneracji foteli i drzwi wszystko wygląda jak nowe. Chłopaki znają się na rzeczy. Polecam każdemu, kto chce odświeżyć wnętrze.
-
-                    .swiper-slide
-                        .review.custom-bg-light
-                            .review__header
-                                img.review__ava(src="img/m3.jpg", alt="")
+                                .review__ava(data-letter="M", style="--bg-color: gray")
                                 div
                                     h6.review__name Michał
                                     .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Zdecydowałem się na zmianę koloru tapicerki oraz obicie podsufitki. Efekt? Samochód zyskał zupełnie nowy charakter. Wszystko zrobione z dbałością o szczegóły. Świetna robota, zero niedociągnięć!
-
+                            p.review__text Super robota bardzo ładnie obszyte elementy podsufitki i pomalowane plastiki. Bardzo miła obsługa i profesjonalne podejście do klienta. Szybki czas wykonania usługi. Polecam każdemu !!
                     .swiper-slide
                         .review.custom-bg-light
                             .review__header
-                                img.review__ava(src="img/m4.jpg", alt="")
+                                .review__ava(data-letter="M", style="--bg-color: orange")
                                 div
-                                    h6.review__name Piotr
+                                    h6.review__name Maciej Borowczyk
                                     .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Kupiłem używane auto z bardzo zaniedbanym wnętrzem. Firma Tapic wymieniła mi tapicerkę foteli i boczków drzwi. Efekt? Jak nowe! Bardzo profesjonalne podejście i świetna jakość materiałów.
-
+                            p.review__text Pan godny polecenia. Usługa wykonana sprawnie, terminowo. Miałem do wymiany element siedzenia skóra. Warto skorzystać z usług tej firmy i naprawić poszycie fotela. Polecam.
                     .swiper-slide
                         .review.custom-bg-light
                             .review__header
-                                img.review__ava(src="img/m5.jpg", alt="")
+                                .review__ava(data-letter="W", style="--bg-color: purple")
                                 div
-                                    h6.review__name Rafał
+                                    h6.review__name Wojciech Sieracki
                                     .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Dach w moim aucie odklejał się i wyglądał tragicznie. Teraz mam nową podsufitkę, solidnie zamocowaną i idealnie dopasowaną do wnętrza. Dodatkowo wymieniłem tapicerkę foteli – wszystko wygląda rewelacyjnie.
-
+                            p.review__text Polecam 100% Profesjonalne podejście do klienta . Pozdrawiam
                     .swiper-slide
                         .review.custom-bg-light
                             .review__header
-                                img.review__ava(src="img/m6.jpg", alt="")
+                                .review__ava(data-letter="K", style="--bg-color: darkred")
                                 div
-                                    h6.review__name Tomasz
+                                    h6.review__name Kichumo Leslaw
                                     .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Tapicerka kierownicy była bardzo zniszczona, a podsufitka wisiała. Po wizycie w Tapic wszystko zostało wymienione na nowe. Auto wygląda teraz o wiele lepiej, komfort jazdy znacznie wzrósł.
-
+                            p.review__text Regeneracja foteli skórzanych wykonana perfekcyjnie.
                     .swiper-slide
                         .review.custom-bg-light
                             .review__header
-                                img.review__ava(src="img/m7.jpg", alt="")
+                                .review__ava(data-letter="B", style="--bg-color: green")
                                 div
-                                    h6.review__name Krzysztof
+                                    h6.review__name Borys Kamiński
                                     .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Chciałem zrobić coś ekstra z wnętrzem auta, więc zamówiłem tapicerkę na zamówienie. Zmienili kolor, obszyli fotele i drzwi. Efekt jest po prostu wow! Fachowa robota i świetny kontakt.
-
+                            p.review__text Sprawnie, miło, tanio i bardzo profesjonalnie. Pan Bogdan zna się na robocie! Pokrowce w nissanie założone bez najmniejszego zarzutu. Polecam z czystym sumieniem
                     .swiper-slide
                         .review.custom-bg-light
                             .review__header
-                                img.review__ava(src="img/m8.jpg", alt="")
+                                .review__ava(data-letter="Я", style="--bg-color: pink")
                                 div
-                                    h6.review__name Marek
+                                    h6.review__name Ярослав Шкурат
                                     .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Auto służy mi zawodowo i ważny jest dla mnie porządek we wnętrzu. Po wymianie tapicerki foteli i odnowieniu drzwi, kabina wygląda elegancko i schludnie. Profesjonalna obsługa, szybka realizacja.
-
+                            p.review__text Praca zrobiona perfekcyjnie. Polecam.
                     .swiper-slide
                         .review.custom-bg-light
                             .review__header
-                                img.review__ava(src="img/m9.jpg", alt="")
+                                .review__ava(data-letter="C", style="--bg-color: blue")
                                 div
-                                    h6.review__name Łukasz
+                                    h6.review__name Сергей Рагимов
                                     .rating.review__rating(style="--star-rating: 5;")
-                            p.review__text Wnętrze mojego auta było nudne i przestarzałe. Dzięki nowej tapicerce na fotelach i boczkach drzwi wygląda nowocześnie i stylowo. Jestem bardzo zadowolony z efektu końcowego!
+                            p.review__text Добре виконана робота по перетяжці стелі в гольф 6. Порядний і професійний майстер . Рекомендую
+                    .swiper-slide
+                        .review.custom-bg-light
+                            .review__header
+                                .review__ava(data-letter="C", style="--bg-color: red")
+                                div
+                                    h6.review__name Саня Зайчук
+                                    .rating.review__rating(style="--star-rating: 5;")
+                            p.review__text Рекомендую
+                                br
+                                | Робили сидіння все супер)
+            .reviews__note.text-center Zostaw swoją opinię i zapoznaj się z pozostałymi na 
+                a(href="https://maps.app.goo.gl/ecQ16vXt3fkUcFF59", target="_blank") Google Maps
+                | .

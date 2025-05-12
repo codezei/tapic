@@ -4,151 +4,69 @@ section.works.block#works
         h3.h6.text-center.text-light.works__subtitle Efekty mojej pracy – zobacz metamorfozy wnętrz samochodowych!
         .works__categories.categories
             .categories__item
-                button.btn.btn-secondary.btn-small.category(type="button", data-slide="0") Tapicerka foteli
+                button.btn.btn-secondary.btn-small.active.category(type="button", data-slide="0") Tapicerka podsufitki
             .categories__item
-                button.btn.btn-secondary.btn-small.active.category(type="button", data-slide="1") Tapicerka kierownicy
+                button.btn.btn-secondary.btn-small.category(type="button", data-slide="1") Tapicerka foteli
             .categories__item
-                button.btn.btn-secondary.btn-small.category(type="button", data-slide="2") Tapicerka podsufitki
+                button.btn.btn-secondary.btn-small.category(type="button", data-slide="2") Tapicerka drzwi (boczków)
             .categories__item
-                button.btn.btn-secondary.btn-small.category(type="button", data-slide="3") Tapicerka drzwi (boczków)
+                button.btn.btn-secondary.btn-small.category(type="button", data-slide="3") Tapicerka detali wnętrza
+            .categories__item
+                button.btn.btn-secondary.btn-small.category(type="button", data-slide="4") Poduszki pod zagłówek
+            .categories__item
+                button.btn.btn-secondary.btn-small.category(type="button", data-slide="5") Dywaniki samochodowe (EVA, welur)
+            .categories__item
+                button.btn.btn-secondary.btn-small.category(type="button", data-slide="6") Organizer do bagażnika (EVA)
         .swiper.works-swiper
             .swiper-wrapper 
                 .swiper-slide
                     .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
-                        a.col(href="img/seat/seat-img-1.webp") 
-                            picture.work
-                                source(srcset="img/seat/seat-img-1.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/seat/seat-img-1.jpg", alt="")
-                        a.col(href="img/seat/seat-img-2.webp") 
-                            picture.work
-                                source(srcset="img/seat/seat-img-2.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/seat/seat-img-2.jpg", alt="")
-                        a.col(href="img/seat/seat-img-3.webp") 
-                            picture.work
-                                source(srcset="img/seat/seat-img-3.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/seat/seat-img-3.jpg", alt="")
-                        a.col(href="img/seat/seat-img-4.webp") 
-                            picture.work
-                                source(srcset="img/seat/seat-img-4.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/seat/seat-img-4.jpg", alt="")
-                        a.col(href="img/seat/seat-img-5.webp") 
-                            picture.work
-                                source(srcset="img/seat/seat-img-5.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/seat/seat-img-5.jpg", alt="")
-                        a.col(href="img/seat/seat-img-6.webp") 
-                            picture.work
-                                source(srcset="img/seat/seat-img-6.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/seat/seat-img-6.jpg", alt="")
-                        a.col(href="img/seat/seat-img-7.webp") 
-                            picture.work
-                                source(srcset="img/seat/seat-img-7.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/seat/seat-img-7.jpg", alt="")
-                        a.col(href="img/seat/seat-img-8.webp") 
-                            picture.work
-                                source(srcset="img/seat/seat-img-8.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/seat/seat-img-8.jpg", alt="")
+                        each num in [1,2,3,4,5,6,7,8]
+                            a.col(href=`img/ceiling/ceiling-img-${num}.webp`) 
+                                picture.work
+                                    source(srcset=`img/ceiling/ceiling-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(loading="lazy", src=`img/ceiling/ceiling-img-${num}-mob.jpg`, alt="")
                 .swiper-slide
                     .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
-                        a.col(href="img/wheel/wheel-img-1.webp") 
-                            picture.work
-                                source(srcset="img/wheel/wheel-img-1.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/wheel/wheel-img-1.jpg", alt="")
-                        a.col(href="img/wheel/wheel-img-2.webp") 
-                            picture.work
-                                source(srcset="img/wheel/wheel-img-2.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/wheel/wheel-img-2.jpg", alt="")
-                        a.col(href="img/wheel/wheel-img-3.webp") 
-                            picture.work
-                                source(srcset="img/wheel/wheel-img-3.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/wheel/wheel-img-3.jpg", alt="")
-                        a.col(href="img/wheel/wheel-img-4.webp") 
-                            picture.work
-                                source(srcset="img/wheel/wheel-img-4.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/wheel/wheel-img-4.jpg", alt="")
-                        a.col(href="img/wheel/wheel-img-5.webp") 
-                            picture.work
-                                source(srcset="img/wheel/wheel-img-5.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/wheel/wheel-img-5.jpg", alt="")
-                        a.col(href="img/wheel/wheel-img6.webp") 
-                            picture.work
-                                source(srcset="img/wheel/wheel-img-6.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/wheel/wheel-img-6.jpg", alt="")
-                        a.col(href="img/wheel/wheel-img-7.webp") 
-                            picture.work
-                                source(srcset="img/wheel/wheel-img-7.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/wheel/wheel-img-7.jpg", alt="")
-                        a.col(href="img/wheel/wheel-img-8.webp") 
-                            picture.work
-                                source(srcset="img/wheel/wheel-img-8.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/wheel/wheel-img-8.jpg", alt="")
-
+                        each num in [1,2,3,4,5,6,7,8]
+                            a.col(href=`img/seat/seat-img-${num}.webp`) 
+                                picture.work
+                                    source(srcset=`img/seat/seat-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(loading="lazy", src=`img/seat/seat-img-${num}-mob.jpg`, alt="")
                 .swiper-slide
                     .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
-                        a.col(href="img/ceiling/ceiling-img-1.webp") 
-                            picture.work
-                                source(srcset="img/ceiling/ceiling-img-1.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/ceiling/ceiling-img-1.jpg", alt="")
-                        a.col(href="img/ceiling/ceiling-img-2.webp") 
-                            picture.work
-                                source(srcset="img/ceiling/ceiling-img-2.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/ceiling/ceiling-img-2.jpg", alt="")
-                        a.col(href="img/ceiling/ceiling-img-3.webp") 
-                            picture.work
-                                source(srcset="img/ceiling/ceiling-img-3.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/ceiling/ceiling-img-3.jpg", alt="")
-                        a.col(href="img/ceiling/ceiling-img-4.webp") 
-                            picture.work
-                                source(srcset="img/ceiling/ceiling-img-4.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/ceiling/ceiling-img-4.jpg", alt="")
-                        a.col(href="img/ceiling/ceiling-img-5.webp") 
-                            picture.work
-                                source(srcset="img/ceiling/ceiling-img-5.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/ceiling/ceiling-img-5.jpg", alt="")
-                        a.col(href="img/ceiling/ceiling-img-6.webp") 
-                            picture.work
-                                source(srcset="img/ceiling/ceiling-img-6.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/ceiling/ceiling-img-6.jpg", alt="")
-                        a.col(href="img/ceiling/ceiling-img-7.webp") 
-                            picture.work
-                                source(srcset="img/ceiling/ceiling-img-7.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/ceiling/ceiling-img-7.jpg", alt="")
-                        a.col(href="img/ceiling/ceiling-img-8.webp") 
-                            picture.work
-                                source(srcset="img/ceiling/ceiling-img-8.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/ceiling/ceiling-img-8.jpg", alt="")
+                        each num in [1,2,3,4,5,6,7,8]
+                            a.col(href=`img/door/door-img-${num}.webp`) 
+                                picture.work
+                                    source(srcset=`img/door/door-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(loading="lazy", src=`img/door/door-img-${num}-mob.jpg`, alt="")
                 .swiper-slide
                     .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
-                        a.col(href="img/door/door-img-1.webp") 
-                            picture.work
-                                source(srcset="img/door/door-img-1.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/door/door-img-1.jpg", alt="")
-                        a.col(href="img/door/door-img-2.webp") 
-                            picture.work
-                                source(srcset="img/door/door-img-2.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/door/door-img-2.jpg", alt="")
-                        a.col(href="img/door/door-img-3.webp") 
-                            picture.work
-                                source(srcset="img/door/door-img-3.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/door/door-img-3.jpg", alt="")
-                        a.col(href="img/door/door-img-4.webp") 
-                            picture.work
-                                source(srcset="img/door/door-img-4.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/door/door-img-4.jpg", alt="")
-                        a.col(href="img/door/door-img-5.webp") 
-                            picture.work
-                                source(srcset="img/door/door-img-5.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/door/door-img-5.jpg", alt="")
-                        a.col(href="img/door/door-img-6.webp") 
-                            picture.work
-                                source(srcset="img/door/door-img-6.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/door/door-img-6.jpg", alt="")
-                        a.col(href="img/door/door-img-7.webp") 
-                            picture.work
-                                source(srcset="img/door/door-img-7.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/door/door-img-7.jpg", alt="")
-                        a.col(href="img/door/door-img-8.webp") 
-                            picture.work
-                                source(srcset="img/door/door-img-8.webp", type="image/webp")
-                                img.work__img(loading="lazy", src="img/door/door-img-8.jpg", alt="")
+                        each num in [1,2,3,4,5,6,7,8]
+                            a.col(href=`img/wheel/wheel-img-${num}.webp`) 
+                                picture.work
+                                    source(srcset=`img/wheel/wheel-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(loading="lazy", src=`img/wheel/wheel-img-${num}-mob.jpg`, alt="")
+                .swiper-slide
+                    .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
+                        each num in [1,2,3,4,5,6,7,8]
+                            a.col(href=`img/pillow/pillow-img-${num}.webp`) 
+                                picture.work
+                                    source(srcset=`img/pillow/pillow-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(loading="lazy", src=`img/pillow/pillow-img-${num}-mob.jpg`, alt="")
+                .swiper-slide
+                    .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
+                        each num in [1,2,3,4,5]
+                            a.col(href=`img/mats/mats-img-${num}.webp`) 
+                                picture.work
+                                    source(srcset=`img/mats/mats-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(loading="lazy", src=`img/mats/mats-img-${num}-mob.jpg`, alt="")
+                .swiper-slide
+                    .row.gallery.row-cols-2.row-cols-sm-2.row-cols-md-4
+                        each num in [1,2,3,4,5,6,7,8]
+                            a.col(href=`img/box/box-img-${num}.webp`) 
+                                picture.work
+                                    source(srcset=`img/box/box-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(loading="lazy", src=`img/box/box-img-${num}-mob.jpg`, alt="")
         .works__btn 
             a.btn.btn-primary.btn-large(href="#cta") Umów się

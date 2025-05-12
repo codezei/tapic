@@ -1,0 +1,40 @@
+section.block.details.custom-bg-light  
+  .container 
+    .row.justify-content-around.align-items-center 
+      .col-12.col-lg-6 
+        h1.details__title Organizery do Bagażnika z Materiału EVA – Praktyczność i Styl
+        p.details__description.custom-bg-light Tworzymy na zamówienie funkcjonalne i estetyczne torby oraz organizery do bagażnika z materiału EVA – lekkiego, trwałego i odpornego na wilgoć. Dzięki nim zyskasz porządek i maksymalne wykorzystanie przestrzeni bagażowej. Projekty realizujemy indywidualnie – według wymiarów i potrzeb klienta. Obsługujemy Poznań i okolice.
+        ul 
+          li 
+            b.text-bold Porządek w bagażniku: 
+            | Organizer pozwala posegregować przedmioty i uniknąć chaosu.
+          li 
+            b.text-bold Trwały materiał EVA: 
+            | Odporny na uszkodzenia, łatwy w czyszczeniu, nie chłonie wilgoci.
+          li 
+            b.text-bold Personalizacja: 
+            | Wykonanie na wymiar – dopasowane do konkretnego modelu auta.
+          li 
+            b.text-bold Estetyczny wygląd: 
+            | Starannie wykończone detale i różne kolory do wyboru.
+          li 
+            b.text-bold Polska produkcja: 
+            | Wszystko robimy ręcznie w naszej pracowni w Poznaniu.
+      .col-12.col-lg-6.col-xl-5.col-xxl-4 
+        .swiper.details-swiper
+          .swiper-wrapper 
+            each num in [1,2,3,4,5,6,7,8]
+              .swiper-slide 
+                picture.work
+                  source(srcset=`img/box/box-img-${num}-mob.webp`, type="image/webp")
+                  img.work__img(src=`img/box/box-img-${num}-mob.jpg`, alt=`Organizer do bagażnika EVA - zdjęcie ${num}`)
+          .swiper-button-next
+          .swiper-button-prev
+        .swiper.details-swiper-thumb 
+          .swiper-wrapper 
+            each num in [1,2,3,4,5,6,7,8]
+              .swiper-slide 
+                picture.work
+                  source(srcset=`img/box/box-img-${num}-mob.webp`, type="image/webp")
+                  img.work__img(src=`img/box/box-img-${num}-mob.jpg`, alt="")
+

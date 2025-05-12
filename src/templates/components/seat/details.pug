@@ -1,4 +1,4 @@
-section.block.details 
+section.block.details.custom-bg-light  
     .container 
         .row.justify-content-around.align-items-center 
             .col-12.col-lg-6 
@@ -23,71 +23,17 @@ section.block.details
             .col-12.col-lg-6.col-xl-5.col-xxl-4 
                 .swiper.details-swiper
                     .swiper-wrapper 
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-1.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-1.jpg", alt="Tapicerka foteli Poznań Tapik")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-2.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-2.jpg", alt="Nowe obicie siedzeń samochodowych")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-3.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-3.jpg", alt="Tapicer samochodowy Poznań Tapik")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-4.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-4.jpg", alt="Obszywanie foteli samochodowych Poznań")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-5.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-5.jpg", alt="Obszywanie foteli samochodowych Poznań")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-6.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-6.jpg", alt="Obszywanie foteli samochodowych Poznań")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-7.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-7.jpg", alt="Obszywanie foteli samochodowych Poznań")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-8.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-8.jpg", alt="Obszywanie foteli samochodowych Poznań")
-                    .swiper-button-next 
+                        each num in [9,10,11,12,13,14,15,16]
+                            .swiper-slide 
+                                picture.work
+                                    source(srcset=`img/seat/seat-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(src=`img/seat/seat-img-${num}-mob.jpg`, alt=`Dywaniki samochodowe – zdjęcie ${num}`)
+                    .swiper-button-next
                     .swiper-button-prev
                 .swiper.details-swiper-thumb 
                     .swiper-wrapper 
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-1.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-1.jpg", alt="")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-2.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-2.jpg", alt="")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-3.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-3.jpg", alt="")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-4.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-4.jpg", alt="")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-5.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-5.jpg", alt="")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-6.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-6.jpg", alt="")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-7.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-7.jpg", alt="")
-                        .swiper-slide 
-                            picture.work
-                                source(srcset="img/seat/seat-img-8.webp", type="image/webp")
-                                img.work__img(src="img/seat/seat-img-8.jpg", alt="")
+                        each num in [9,10,11,12,13,14,15,16]
+                            .swiper-slide 
+                                picture.work
+                                    source(srcset=`img/seat/seat-img-${num}-mob.webp`, type="image/webp")
+                                    img.work__img(src=`img/seat/seat-img-${num}-mob.jpg`, alt="")

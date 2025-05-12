@@ -1,0 +1,27 @@
+extends settings/layout
+
+prepend html
+  - const lang = "pl";
+
+prepend head
+  - const pageTitle = "Organizery do bagażnika z EVA | Tapik – Funkcjonalne rozwiązania do auta"
+  - const pageDescription = "Wykonujemy na wymiar praktyczne organizery i torby do bagażnika z trwałego materiału EVA. Idealne dopasowanie, wysoka jakość i estetyczne wykonanie – Tapik Poznań."
+  - const pageKeywords = "organizer do bagażnika, torby EVA do samochodu, akcesoria bagażnikowe Poznań, tapicer samochodowy Tapik, organizery na wymiar, tapicerka samochodowa Poznań"
+  - const pageUrl = "https://tapik.pl/box.html"
+  - const pageImage = "https://tapik.pl/img/service-box.jpg"
+  - const twitterImage = "https://tapik.pl/img/service-box.jpg"
+  - const themeColor = "#ffffff"
+
+append head
+
+append content
+  include components/header
+  main
+    include components/box/details
+    include components/cta
+    include components/reviews
+    include components/contacts
+    include components/popup
+  include components/footer
+
+append scripts
