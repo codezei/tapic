@@ -1,5 +1,5 @@
 .promo {
-    background-color: #fff;
+    background-color: #000;
     background-image:  url(../img/promo-bg-mob.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,20 +8,21 @@
         text-transform: uppercase;
     }
     &__subtitle {
-        margin-bottom: 2rem;
+        margin-bottom: var(--h2);
     }
 
     &__info {
         position: relative;
         text-align: center;
         z-index: 1;
+        color: #fff;
         &:before {
             content: "";
             display: block;
-            width: 100%;
+            width: 200%;
             padding-bottom: 100%;
-            background: #fff;
-            filter: blur(150px);
+            background: #000;
+            filter: blur(200px);
             position: absolute;
             left: 50%;
             top: 50%;

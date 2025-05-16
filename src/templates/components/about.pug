@@ -1,11 +1,12 @@
 section.about.block#about 
     .container 
         h2.about__title.text-center.text-uppercase O nas
-        .about__inner 
-            .about__image
-                picture 
+        .row.gy-4.align-items-center.justify-content-center 
+            .col-12.col-md-10.col-lg-8.col-xl-5.col-xxl-4.text-center
+                picture.about__image 
                     source(srcset="img/about.webp", type="image/webp")
                     img.custom-img(src="img/about.jpg", alt="O Tapik")
-            .about__info Nazywamy się Tapik i od lat zajmujemy się profesjonalną tapicerką samochodową w Poznaniu i okolicach. Tworzymy nową jakość wnętrz samochodowych dzięki doświadczeniu, dokładności i najlepszym materiałom. Skupiamy się na detalach – to one robią różnicę.
-        .about__btn.text-center
-            a.btn.btn-primary.btn-large(href="#cta") Umów się
+            .col-12.col-md-10.col-lg-8.col-xl-5.col-xxl-4
+                .about__info.text-center Nazywamy się Tapik i od lat zajmujemy się profesjonalną tapicerką samochodową w Poznaniu i okolicach. Tworzymy nową jakość wnętrz samochodowych dzięki doświadczeniu, dokładności i najlepszym materiałom. Skupiamy się na detalach – to one robią różnicę.
+            .col-12.text-center
+                a.btn.btn-primary.btn-large(href="#cta") Umów się
